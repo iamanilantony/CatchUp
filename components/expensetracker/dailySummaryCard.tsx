@@ -5,9 +5,9 @@ type Props = {};
 
 const DailySummaryCard = (props: Props) => {
   return (
-    <div className="my-4 bg-white">
-      <div className="my-2 flex justify-between">
-        <p className="font-bold">
+    <div className="my-4 bg-black text-white">
+      <div className="my-4 ml-2 flex justify-between">
+        <p className="font-bold mt-1">
           27{" "}
           <span className="rounded bg-gray-400 p-1 text-xs font-light">
             Fri

@@ -19,7 +19,7 @@ export default function NavBar({ session }: { session: Session | null }) {
           scrolled
             ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
             : "bg-white/0"
-        } z-30 transition-all`}
+        } z-25 transition-all`}
       >
         <div className="mx-5 flex h-16 w-full max-w-screen-xl items-center justify-between">
           <Link href="/" className="font-display flex items-center text-2xl">

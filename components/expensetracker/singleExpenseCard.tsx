@@ -16,7 +16,7 @@ const SingleExpenseCard = (props: Props) => {
   };
 
   return (
-    <div className="flex justify-between p-2 hover:border">
+    <div className="flex justify-between p-2 hover:border-y cursor-pointer">
       <Modal showModal={showModal} setShowModal={setShowModal}>
         <AddExpenseForm />
       </Modal>

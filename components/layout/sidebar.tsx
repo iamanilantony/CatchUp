@@ -20,11 +20,18 @@ export default function Sidebar({ session }: { session?: Session | null }) {
     <div
       className={`fixed left-0 top-0 z-50 h-screen transform transition-transform duration-300 ${
         modalCollapse ? "w-56" : "w-22"
-      } overflow-y-auto bg-[#F7F9FC] text-[#BDC5CE]`}
+      } overflow-y-auto bg-[#0d0d0d] text-[#5169F6]`}
     >
-      <div className="flex items-center p-4 pl-8 text-2xl font-bold text-[#0F6FDE]">
-        <AiOutlineVideoCameraAdd className="mr-2" />
-        {modalCollapse && "Catchup"}
+      <div className="flex items-center p-4 pl-8 text-2xl font-bold text-[#5169F6]">
+        <span className="text-white">
+          <span className="bg-[#5169F6] p-1 rounded-sm mr-2 font-light">
+            Cu
+          </span>
+        </span>
+        {
+          modalCollapse && <span className="text-white">catchup</span>
+          // <AiOutlineVideoCameraAdd className="mr-2" />
+        }
         <button
           className={`bg fixed z-0  cursor-pointer ${
             modalCollapse ? "ml-40" : "ml-8"
@@ -43,7 +50,7 @@ export default function Sidebar({ session }: { session?: Session | null }) {
           <li className="mb-2 px-5 py-5 ">
             <a
               href="#"
-              className="flex items-center text-[#0F6FDE] hover:text-[#0F6FDE]"
+              className="flex items-center text-[#5169F6] hover:text-[#5169F6]"
             >
               <AiFillHome className="mr-2" />
               {modalCollapse && "Dashboard"}
@@ -52,7 +59,7 @@ export default function Sidebar({ session }: { session?: Session | null }) {
           <li className="mb-2 px-5 py-5">
             <a
               href="#"
-              className="flex items-center text-gray-300 hover:text-[#0F6FDE]"
+              className="flex items-center text-gray-300 hover:text-[#5169F6]"
             >
               <AiFillCheckCircle className="mr-2" />
               {modalCollapse && "Profile"}
@@ -61,7 +68,7 @@ export default function Sidebar({ session }: { session?: Session | null }) {
           <li className="mb-2 px-5 py-5">
             <a
               href="#"
-              className="flex items-center text-gray-300 hover:text-[#0F6FDE]"
+              className="flex items-center text-gray-300 hover:text-[#5169F6]"
             >
               <AiFillSetting className="mr-2" />
               {modalCollapse && "Settings"}
@@ -70,7 +77,7 @@ export default function Sidebar({ session }: { session?: Session | null }) {
           <li className="mb-2 px-5 py-5">
             <a
               href="#"
-              className="flex items-center text-gray-300 hover:text-[#0F6FDE]"
+              className="flex items-center text-gray-300 hover:text-[#5169F6]"
             >
               <AiFillCheckCircle className="mr-2" />
               {modalCollapse && "Logout"}

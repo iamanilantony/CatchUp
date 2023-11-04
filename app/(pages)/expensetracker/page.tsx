@@ -12,7 +12,7 @@ export default function page() {
     <>
       <div className="z-10 ml-40 w-full max-w-7xl px-5 xl:px-0">
         <div className="flex flex-col">
-          <div className="rounded bg-gray-100 px-2 pb-2">
+          <div className="rounded text-white px-2 pb-2">
             <h1 className="my-2 text-center text-2xl font-bold">Oct 2023</h1>
             <div className="flex justify-between px-2">
               <p>Daily</p>

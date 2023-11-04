@@ -1,5 +1,5 @@
 import Modal from "@/components/shared/modal";
-import { Button } from "@/app/ui/button";
+import { Button } from "@/components/ui/Button";
 import { ContactCreationRequest } from "@/lib/validators/contact";
 import axios from "axios";
 import Link from "next/link";
